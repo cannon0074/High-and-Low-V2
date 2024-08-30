@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* 反転用 */
+/* .card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.card {
+  position: relative;
+  width: 226px;
+  height: 314px;
+  perspective: 600px;
+  transform-style: preserve-3d;
+}
+
+.cardface {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+
+  background-color: #262626;
+  transition: transform 0.6s;
+  backface-visibility: hidden;
+}
+
+.cardface__front {
+  transform: none;
+}
+.is-flipped .cardface__front {
+  transform: rotateY(180deg);
+}
+
+.cardface__back {
+  transform: rotateY(180deg);
+  color: #262626;
+  background-color: #aaaaaa;
+}
+.is-flipped .cardface__back {
+  transform: rotateY(360deg);
+} */

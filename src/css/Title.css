@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+
+.title-high {
+  position: absolute;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 100px;
+  top: 5%;
+  left: 30%;
+  user-select: none;
+}
+
+.title-and {
+  position: absolute;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 100px;
+  top: 20%;
+  left: 45%;
+  user-select: none;
+}
+
+.title-low {
+  position: absolute;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 100px;
+  top: 35%;
+  left: 50%;
+  user-select: none;
+}
+
+.start-button {
+  margin-top: 300px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.BGMbutton {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}

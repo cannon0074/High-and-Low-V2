@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+
+.main {
+  position: relative;
+  margin-top: 0;
+}
+
+/* .cardContainer {
+  display: flex;
+  justify-content: center;
+} */
+
+.c-button._shiny_low {
+  position: relative;
+  background-color: rgba(0, 100, 255, 0.5);
+  width: 100px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  max-width: 500px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 300ms;
+  border-color: rgba(0, 100, 255);
+  user-select: none;
+}
+.c-button._shiny_low::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #ffffff;
+  transition: 300ms;
+  animation: shinyshiny 4s ease-in-out infinite;
+}
+
+.c-button._shiny_low:hover {
+  text-decoration: none;
+  color: #fff;
+  box-shadow: none;
+  background-color: rgba(0, 50, 255);
+}
+
+@-webkit-keyframes shinyshiny {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.c-button._shiny_high {
+  position: relative;
+  background-color: rgba(255, 30, 0, 0.5);
+  width: 100px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  max-width: 500px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 300ms;
+  border-color: rgba(255, 50, 0);
+  user-select: none;
+}
+.c-button._shiny_high::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #ffffff;
+  transition: 300ms;
+  animation: shinyshiny 4s ease-in-out infinite;
+}
+
+.c-button._shiny_high:hover {
+  text-decoration: none;
+  color: #fff;
+  box-shadow: none;
+  background-color: rgba(255, 50, 0);
+}
+
+@-webkit-keyframes shinyshiny {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.firstCardContainer .back,
+.firstCardContainer .front {
+  transition: all 0.3s;
+  position: absolute;
+  backface-visibility: hidden;
+  right: 60%;
+  top: 25%;
+}
+
+.firstCardContainer .front {
+  transform: rotateY(180deg);
+}
+
+.firstCardContainer .back.rotated {
+  transform: rotateY(-180deg);
+}
+
+.firstCardContainer .front.rotated {
+  transform: rotateY(0);
+}
+
+.secondCardContainer .back,
+.secondCardContainer .front {
+  transition: all 0.3s;
+  position: absolute;
+  backface-visibility: hidden;
+  left: 60%;
+  top: 25%;
+}
+
+.secondCardContainer .front {
+  transform: rotateY(180deg);
+}
+
+.secondCardContainer .back.rotated {
+  transform: rotateY(-180deg);
+}
+
+.secondCardContainer .front.rotated {
+  transform: rotateY(0);
+}
+
+.fadeDown {
+  animation-name: fadeDownAnime;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeDownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeRight {
+  animation-name: fadeRightAnime;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+}
+
+.score {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.message {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 48px;
+}
+
+/* .cardContainer {
+  margin-top: 10px;
+} */
+
+.button-container {
+  margin-top: 15rem;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.next-new {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.high {
+  margin: 10px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.low {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 10px;
+}
+
+.next {
+  visibility: hidden;
+  background-color: rgba(0, 120, 60, 0.5);
+  border-color: rgba(0, 255, 50);
+  transition: 300ms;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 10px;
+  user-select: none;
+}
+
+.next:hover {
+  transition: 300ms;
+  background-color: rgba(0, 180, 80);
+}
+
+.new {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 255, 255);
+  transition: 300ms;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 10px;
+  user-select: none;
+  color: rgba(0, 255, 255);
+}
+
+.new:hover {
+  transition: 300ms;
+  background-color: rgba(0, 220, 220);
+  border-color: rgba(0, 255, 255);
+  color: rgba(0, 0, 0);
+}
+
+.next.visible {
+  visibility: visible;
+}
+
+.new.newvisible {
+  visibility: visible;
+}
+
+.button-visible {
+  pointer-events: none;
+  filter: grayscale(100%);
+}
