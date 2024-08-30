@@ -10,6 +10,7 @@ const Sound = () => {
   if (!audioRef.current) {
     audioRef.current = new Audio(Music);
     audioRef.current.loop = true; // 音楽をループ再生する場合
+    audioRef.current.volume = 0.3;
   }
 
   const BGMplay = () => {
