@@ -111,7 +111,7 @@ const Deck = () => {
           setSecondFlip(!secondFlip);
           cardFlip();
           if (firstCard < secondCardNum) {
-            if (score === 1) {
+            if (score === 9) {
               setMessage("CONGRATULATIONS！");
               Fanfare();
               setScore((score) => score + 1);
@@ -159,7 +159,7 @@ const Deck = () => {
           setSecondFlip(!secondFlip);
           cardFlip();
           if (firstCard > secondCardNum) {
-            if (score === 1) {
+            if (score === 9) {
               setMessage("CONGRATULATIONS！");
               Fanfare();
               setScore((score) => score + 1);
