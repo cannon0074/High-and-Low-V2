@@ -69,12 +69,10 @@ const Deck = () => {
         return res.json();
       })
       .then((json) => {
-        console.log(json);
         const newCardValue = json.cards[0].value;
         const firstCardNum = cardValueToNumber(newCardValue);
         setfirstCardImg(json.cards[0].image);
         setfirstCard(firstCardNum);
-        console.log(firstCardNum);
       })
       .then(() => {
         setTimeout(() => {
@@ -105,8 +103,7 @@ const Deck = () => {
           setSecondBackImg(json.cards[0].image);
           setsecondCard(secondCardNum);
         }
-        console.log(firstCard);
-        console.log(secondCardNum);
+
         setTimeout(() => {
           setSecondFlip(!secondFlip);
           cardFlip();
@@ -143,7 +140,6 @@ const Deck = () => {
         return res.json();
       })
       .then((json) => {
-        console.log(json);
         const newCardValue = json.cards[0].value;
         const secondCardNum = cardValueToNumber(newCardValue);
         if (secondFlip === false) {
@@ -153,8 +149,7 @@ const Deck = () => {
           setSecondBackImg(json.cards[0].image);
           setsecondCard(secondCardNum);
         }
-        console.log(firstCard);
-        console.log(secondCardNum);
+
         setTimeout(() => {
           setSecondFlip(!secondFlip);
           cardFlip();
