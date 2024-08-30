@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Title from "./components/title.jsx";
+import Main from "./components/main.jsx";
 
 function App() {
   return (
     <>
-      <Title />
+      <Main />
     </>
   );
 }

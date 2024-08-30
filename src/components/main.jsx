@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../css/star.css";
 import "../css/Card.css";
 import "../css/Title.css";
@@ -7,7 +7,7 @@ import Deck from "./Deck.jsx";
 import Titletext from "./titletext.jsx";
 import Sound from "./sound.jsx";
 
-const Title = () => {
+const Main = () => {
   const [elements, setElements] = useState([]);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -41,4 +41,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default Main;
