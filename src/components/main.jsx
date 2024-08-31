@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../css/star.css";
 import "../css/Card.css";
 import "../css/Title.css";
-import Star from "./star.jsx";
+
 import Deck from "./Deck.jsx";
 import Titletext from "./titletext.jsx";
 import Sound from "./sound.jsx";
@@ -24,7 +24,7 @@ const Main = () => {
   return (
     <>
       <Sound />
-      <Star />
+
       {isVisible && <Titletext />}
       {isVisible && (
         <button className="start-button" onClick={openGame}>
