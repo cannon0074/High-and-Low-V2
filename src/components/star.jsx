@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/star.css";
+import "../css/star2.css";
 
 const Title = () => {
   return (
