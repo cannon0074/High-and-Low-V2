@@ -197,8 +197,8 @@
   animation-delay: 9992ms;
 }
 .shooting_star:nth-child(13) {
-  top: calc(50% - 177px);
-  left: calc(50% - 34px);
+  top: calc(50% - -320px);
+  left: calc(50% - 334px);
   -webkit-animation-delay: 7561ms;
   animation-delay: 7561ms;
 }

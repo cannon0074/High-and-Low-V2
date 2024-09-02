@@ -95,3 +95,38 @@
   top: 5%;
   right: 5%;
 }
+
+@media screen and (min-width: 570px) {
+  .help-button {
+    position: absolute;
+    top: 13%;
+    right: 5%;
+    border-radius: 100px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .help-button {
+    position: absolute;
+    top: 13%;
+    right: 5%;
+    border-radius: 100px;
+  }
+}
+
+.hard-button {
+  margin-top: 10%;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  transition: 300ms;
+}
+
+.hard-button:hover {
+  transition: 300ms;
+  background-color: rgba(180, 0, 0);
+  border-color: rgba(255, 0, 0);
+  color: rgba(0, 0, 0);
+}

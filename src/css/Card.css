@@ -1,10 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
 
-.main {
-  position: relative;
-  margin-top: 0;
-}
+@media screen and (min-width: 570px) {
+  .main {
+    position: relative;
+    margin-top: 0;
+    width: 500px;
+  }
 
+  .message {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .main {
+    position: relative;
+    margin-top: -40%;
+  }
+
+  .message {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+  }
+}
 /* .cardContainer {
   display: flex;
   justify-content: center;
@@ -125,7 +149,7 @@
   transition: all 0.3s;
   position: absolute;
   backface-visibility: hidden;
-  right: 60%;
+  right: 55%;
   top: 25%;
 }
 
@@ -146,7 +170,7 @@
   transition: all 0.3s;
   position: absolute;
   backface-visibility: hidden;
-  left: 60%;
+  left: 55%;
   top: 25%;
 }
 
@@ -210,13 +234,13 @@
   font-size: 24px;
 }
 
-.message {
+/* .message {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-size: 48px;
-}
+} */
 
 /* .cardContainer {
   margin-top: 10px;
@@ -288,6 +312,10 @@
   background-color: rgba(0, 220, 220);
   border-color: rgba(0, 255, 255);
   color: rgba(0, 0, 0);
+}
+
+.cardvisible {
+  visibility: hidden;
 }
 
 .next.visible {
